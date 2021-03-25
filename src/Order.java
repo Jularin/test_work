@@ -1,4 +1,6 @@
-public class Order {
+import java.io.Serializable;
+
+public class Order implements Serializable {
     private String name;
     private int count;
 
@@ -21,5 +23,9 @@ public class Order {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void addCount(int amount){
+        this.count += amount;
     }
 }

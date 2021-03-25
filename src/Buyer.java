@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Buyer {
+public class Buyer implements Serializable {
     private String name;
     private ArrayList<City> cities;
 
